@@ -1,0 +1,119 @@
+@media (max-width: 1625px){
+  header{
+    padding: 8px 3%;
+    transition: .3s;
+  }
+  header.sticky{
+    padding: 15px 3%;
+    transition: .3s;
+
+  }
+  section{
+    padding: 70px 3%;
+    transition: .3s;
+  }
+  
+}
+
+@media (max-width: 1068px){
+  
+  #menu-icon{
+    display: block;
+    
+  }
+  
+  
+
+.nav-list{
+  position: absolute;
+  top: -630px;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  text-align: center;
+  transition: all .40s;
+  background-image: linear-gradient(45deg, #F09819 0%, #FF512F  51%, #F09819  100%);
+}
+.nav-list a{
+  display: block;
+  padding: 1.2rem;
+  margin: 1.5rem;
+}
+.nav-list a:hover{
+  background-color: white;
+  color: #FF512F ;
+
+}
+.nav-list a::after{
+  display: none;
+}
+.nav-list.active{
+  top: 100%;
+}
+}
+@media (max-width: 800px){
+  
+section{
+  padding: 10% 3%;
+  transition: .3s;
+}
+.home-content h1 {
+  font-size: 110px;
+  font-weight: 300;
+}
+
+.home-content h2 {
+  font-size: 70px;
+  font-weight: 300;
+}
+
+.home-content h3 {
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+header{
+  min-width: 350px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+}
+}
+
+@media screen and (max-width: 768px) {
+  form {
+      padding: 10px;
+  }
+  
+  form input, form textarea {
+      font-size: 1.5rem;
+      padding: 15px;
+  }
+}
+
+@media  screen and (max-width: 900px){
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 12px);
+  }
+  .cards{
+    grid-auto-columns: calc((100% / 2) );
+  }
+  footer{
+   
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: -80px;
+}
+}
+
+@media  screen and (max-width: 600px){
+  .wrapper .carousel {
+    grid-auto-columns:100%;
+  }
+  .cards{
+    grid-auto-columns:100%;
+  }
+}
